@@ -18,7 +18,7 @@ class FirebaseService {
         "name": name.trim(),
         "mobile": mobile.trim(),
         "email": email.trim(),
-        "password": password.trim()
+        "creator" : userCredential.user!.uid
       });
       return null;
     } on FirebaseAuthException catch (e) {
